@@ -36,6 +36,8 @@ def _no_thread_leaks():
 def _no_warnings(recwarn):
     """Fail on warning."""
 
+    __thread_safe__ = False
+
     yield
 
     warnings = []

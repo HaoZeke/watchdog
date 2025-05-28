@@ -38,6 +38,9 @@ disallow_untyped_calls = true
 strict_equality = true
 
 [tool.pytest.ini_options]
+thread_unsafe_fixtures = [
+    '_no_warnings',
+]
 pythonpath = "src"
 addopts = """
     --showlocals
